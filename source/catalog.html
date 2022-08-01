@@ -7,7 +7,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="page-header">
 
     <nav class="navigation">
       <a class="navigation__logo logo" href="index.html">
@@ -18,7 +18,7 @@
       </button>
       <ul class="navigation__list site-navigation">
         <li class="site-navigation__item">
-          <a class="site-navigation__link" href="#">Каталог товаров</a>
+          <a class="site-navigation__link">Каталог товаров</a>
         </li>
         <li class="site-navigation__item">
           <a class="site-navigation__link" href="form.html">Вязание на&nbsp;заказ</a>
@@ -48,7 +48,7 @@
       </ul>
     </nav>
   </header>
-  <main class="main-container">
+  <main class="page-main">
     <section class="catalog">
       <h1 class="catalog__title">Каталог товаров</h1>
       <ul class="catalog__list">
@@ -62,7 +62,7 @@
           </a>
           <p class="product-item__description">Рост 30&nbsp;см, вес 200&nbsp;г</p>
           <p class="product-item__price">1&nbsp;200&nbsp;руб.</p>
-          <button class="product-item__button catalog-cart-button" type="button">
+          <a class="product-item__button catalog-cart-button" href="size-option.html">
             <span class="visually-hidden">Добавить в корзину.</span>
             <svg class="catalog-cart-button__icon" width="20" height="19" viewBox="0 0 20 19" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +70,7 @@
                 d="M19.23 7.24h-3.38L12.56.4c-.2-.4-.58-.5-.97-.3-.38.2-.48.6-.29 1l3 6.14H5.5l3-6.13c.2-.4 0-.8-.29-1-.38-.21-.77 0-.96.3L3.96 7.23H.77c-.38 0-.77.3-.77.8 0 .4.29.8.77.8h.2l.87 3.02c-.2.1-.3.3-.3.6 0 .4.3.7.68.7L3.86 19h12.28l1.64-5.83c.38 0 .67-.3.67-.7 0-.2-.1-.5-.29-.6l.87-3.02h.2c.38 0 .77-.3.77-.8 0-.51-.39-.81-.77-.81Zm-4.35 10.15H4.83l-1.16-4.32h12.47l-1.26 4.32Zm1.55-5.83H3.19l-.77-2.81H17.2l-.77 2.81Z"
                 fill="#000" />
             </svg>
-          </button>
+          </a>
         </li>
         <li class="catalog__item product-item">
           <a class="product-item__link" href="laundry-basket.html">
@@ -82,7 +82,7 @@
           </a>
           <p class="product-item__description">Диаметр 15&nbsp;см, высота 10&nbsp;см</p>
           <p class="product-item__price">690&nbsp;руб.</p>
-          <button class="product-item__button catalog-cart-button" type="button">
+          <a class="product-item__button catalog-cart-button" href="size-option.html">
             <span class="visually-hidden">Добавить в корзину.</span>
             <svg class="catalog-cart-button__icon" width="20" height="19" viewBox="0 0 20 19" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +90,7 @@
                 d="M19.23 7.24h-3.38L12.56.4c-.2-.4-.58-.5-.97-.3-.38.2-.48.6-.29 1l3 6.14H5.5l3-6.13c.2-.4 0-.8-.29-1-.38-.21-.77 0-.96.3L3.96 7.23H.77c-.38 0-.77.3-.77.8 0 .4.29.8.77.8h.2l.87 3.02c-.2.1-.3.3-.3.6 0 .4.3.7.68.7L3.86 19h12.28l1.64-5.83c.38 0 .67-.3.67-.7 0-.2-.1-.5-.29-.6l.87-3.02h.2c.38 0 .77-.3.77-.8 0-.51-.39-.81-.77-.81Zm-4.35 10.15H4.83l-1.16-4.32h12.47l-1.26 4.32Zm1.55-5.83H3.19l-.77-2.81H17.2l-.77 2.81Z"
                 fill="#000" />
             </svg>
-          </button>
+          </a>
         </li>
         <li class="catalog__item product-item">
           <a class="product-item__link" href="toys-basket.html">
@@ -102,7 +102,7 @@
           </a>
           <p class="product-item__description">Диаметр 30&nbsp;см, высота 30&nbsp;см</p>
           <p class="product-item__price">1&nbsp;500&nbsp;руб.</p>
-          <button class="product-item__button catalog-cart-button" type="button">
+          <a class="product-item__button catalog-cart-button" href="size-option.html">
             <span class="visually-hidden">Добавить в корзину.</span>
             <svg class="catalog-cart-button__icon" width="20" height="19" viewBox="0 0 20 19" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -110,20 +110,13 @@
                 d="M19.23 7.24h-3.38L12.56.4c-.2-.4-.58-.5-.97-.3-.38.2-.48.6-.29 1l3 6.14H5.5l3-6.13c.2-.4 0-.8-.29-1-.38-.21-.77 0-.96.3L3.96 7.23H.77c-.38 0-.77.3-.77.8 0 .4.29.8.77.8h.2l.87 3.02c-.2.1-.3.3-.3.6 0 .4.3.7.68.7L3.86 19h12.28l1.64-5.83c.38 0 .67-.3.67-.7 0-.2-.1-.5-.29-.6l.87-3.02h.2c.38 0 .77-.3.77-.8 0-.51-.39-.81-.77-.81Zm-4.35 10.15H4.83l-1.16-4.32h12.47l-1.26 4.32Zm1.55-5.83H3.19l-.77-2.81H17.2l-.77 2.81Z"
                 fill="#000" />
             </svg>
-          </button>
+          </a>
         </li>
       </ul>
     </section>
     <section class="production">
-      <svg class="production__icon" width="32" height="22" viewBox="0 0 32 22" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="m26 10 6-4v16l-6-4v-8Zm-2 0v8c0 2.2-1.8 4-4 4H4c-2.2 0-4-1.8-4-4v-8c0-2.2 1.8-4 4-4h10c0-1.1.9-2 2-2V2H5c-.6 0-1-.4-1-1s.4-1 1-1h12c.6 0 1 .4 1 1v3a2 2 0 0 1 2 2c2.2 0 4 1.8 4 4Zm-12 0H4v8h8v-8Zm8 1c0-.6-.4-1-1-1h-4c-.6 0-1 .4-1 1s.4 1 1 1h4c.6 0 1-.4 1-1Z"
-          fill="#63D1BB" />
-      </svg>
       <h2 class="production__title">Процесс производства</h2>
       <div class="production__video video-block">
-        <img class="video-block__cover" src="img/catalog/video-cover.jpg" alt="Процесс производства">
         <button class="video-block__button">
           <span class="visually-hidden">Запустить плеер.</span>
           <svg width="101" height="77" viewBox="0 0 101 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -142,7 +135,7 @@
       <a class="production__button button button--primary" href="#">Сделать заказ</a>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="page-footer">
     <ul class="footer__social social">
       <li class="social__item">
         <a class="social__link" target="_blank" href="https://vk.com/htmlacademy">
@@ -171,6 +164,35 @@
       </a>
     </p>
   </footer>
+  <div class="modal modal--closed">
+    <div class="modal__content">
+      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <ul class="modal-form__list">
+          <li class="modal-form__item">
+            <label class="modal-form__control modal-control">
+              <input class="modal-contol__field" type="radio" name="size" value="s" checked>
+              <span class="modal-control__label">S</span>
+            </label>
+          </li>
+          <li class="modal-form__item">
+            <label class="modal-form__control modal-control">
+              <input class="modal-contol__field" type="radio" name="size" value="m">
+              <span class="modal-control__label">M</span>
+            </label>
+          </li>
+          <li class="modal-form__item">
+            <label class="modal-form__control modal-control">
+              <input class="modal-contol__field" type="radio" name="size" value="l">
+              <span class="modal-control__label">L</span>
+            </label>
+          </li>
+        </ul>
+        <button class="modal-form__button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
