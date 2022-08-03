@@ -65,7 +65,7 @@
               <img class="product-item__photo" src="img/catalog/toy-hare.jpg" alt="Вязаная игрушка заяц." width="260"
                 height="195">
             </a>
-            <a class="product-item__link" href="toy-hare.html">
+            <a class="product-item__link product-item__link--label" href="toy-hare.html">
               <h2 class="product-item__label">Зайчик-попрыгайчик</h2>
             </a>
             <p class="product-item__description">Рост 30&nbsp;см, вес 200&nbsp;г</p>
@@ -85,7 +85,7 @@
               <img class="product-item__photo" src="img/catalog/laundry-basket.jpg" alt="Вязаная игрушка заяц."
                 width="260" height="195">
             </a>
-            <a class="product-item__link" href="laundry-basket.html">
+            <a class="product-item__link product-item__link--label" href="laundry-basket.html">
               <h2 class="product-item__label">Корзинка для белья</h2>
             </a>
             <p class="product-item__description">Диаметр 15&nbsp;см, высота 10&nbsp;см</p>
@@ -105,7 +105,7 @@
               <img class="product-item__photo" src="img/catalog/basket-with-toy-animals.jpg"
                 alt="Вязаная корзинка с вязаными игрушками животными." width="260" height="195">
             </a>
-            <a class="product-item__link" href="toys-basket.html">
+            <a class="product-item__link product-item__link--label" href="toys-basket.html">
               <h2 class="product-item__label">Большая корзинка для игрушек</h2>
             </a>
             <p class="product-item__description">Диаметр 30&nbsp;см, высота 30&nbsp;см</p>
@@ -196,31 +196,31 @@
     </div>
   </footer>
   <div class="modal modal--closed">
-    <div class="modal__content">
+    <div class="modal__content container">
       <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__form modal-form" action="https://echo.htmlacademy.ru/" method="post">
         <ul class="modal-form__list">
           <li class="modal-form__item">
             <label class="modal-form__control modal-control">
-              <input class="modal-contol__field" type="radio" name="size" value="s" checked>
+              <input class="modal-contol__field visually-hidden" type="radio" name="size" value="s" checked>
               <span class="modal-control__label">S</span>
             </label>
           </li>
           <li class="modal-form__item">
             <label class="modal-form__control modal-control">
-              <input class="modal-contol__field" type="radio" name="size" value="m">
+              <input class="modal-contol__field visually-hidden" type="radio" name="size" value="m">
               <span class="modal-control__label">M</span>
             </label>
           </li>
           <li class="modal-form__item">
             <label class="modal-form__control modal-control">
-              <input class="modal-contol__field" type="radio" name="size" value="l">
+              <input class="modal-contol__field visually-hidden" type="radio" name="size" value="l">
               <span class="modal-control__label">L</span>
             </label>
           </li>
         </ul>
-        <button class="modal-form__button" type="submit">Добавить</button>
+        <button class="modal-form__button button button--modal" type="submit">Добавить</button>
       </form>
     </div>
   </div>
