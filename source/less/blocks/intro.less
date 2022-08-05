@@ -4,7 +4,15 @@
 }
 
 .intro__title {
-  margin: 20px 0;
+  margin: 20px auto;
+
+  @media (min-width: @tablet-width) {
+    width: 530px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+  }
 }
 
 .intro__catalog {

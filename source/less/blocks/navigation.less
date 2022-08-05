@@ -1,11 +1,37 @@
 .navigation {
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-items: center;
   color: var(--main-color);
   font-weight: 700;
-  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 320px 348px;
+    justify-items: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 450px 150px 450px;
+  }
+}
+
+.navigation__logo {
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    justify-self: center;
+  }
 }
 
 .navigation__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
   padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .navigation__list {
