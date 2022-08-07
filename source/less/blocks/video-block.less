@@ -1,7 +1,17 @@
 .video-block {
+  width: 260px;
+  height: 150px;
+  display: flex;
   background: var(--accent-background-color) url("../img/catalog/video-cover.jpg") no-repeat center;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+    width: 668px;
+    height: 455px;
+  }
 }
 
 .video-block__button {
+  margin: auto;
   border: none;
 }
