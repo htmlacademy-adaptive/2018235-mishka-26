@@ -1,11 +1,19 @@
 .top-product {
   padding: 31px 0 42px;
+
+  @media (min-width: @tablet-width) {
+    padding: 39px 0 58px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 54px 0 79px;
+  }
 }
 
 .top-product__wrapper {
   display: grid;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     grid-template-columns: 292px 334px;
     column-gap: 42px;
   }

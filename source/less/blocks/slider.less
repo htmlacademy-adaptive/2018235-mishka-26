@@ -1,3 +1,8 @@
+.slider {
+  position: relative;
+}
+
+
 .slider__item {
   display: none;
 
@@ -8,6 +13,13 @@
 
 .slider__buttons {
   margin: 0 0 38px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    margin: 0;
+    bottom: 50px;
+    right: 70px;
+  }
 }
 
 .slider__button-previous {

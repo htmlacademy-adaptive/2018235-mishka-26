@@ -1,10 +1,23 @@
 .advantages {
   padding: 31px 0 29px;
   display: grid;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 0 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 68px 0 90px;
+  }
 }
 
 .advantages__title {
   margin: 0 0 28px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 39px;
+    margin-left: 175px;
+  }
 }
 
 .advantages__list {
@@ -16,11 +29,19 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 70px;
+    row-gap: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 670px;
+    margin-left: 175px;
+    column-gap: 85px;
   }
 }
 
 .advantages__item {
   background-repeat: no-repeat;
+  padding-top: 50px;
 
   &--ecologic {
     background-image: url("../img/index/advantages/ecologic.svg");
@@ -68,6 +89,7 @@
 }
 
 .advantages__description {
+  margin: 0;
   font-weight: 700;
   line-height: 20px;
   color: var("--main-color");
