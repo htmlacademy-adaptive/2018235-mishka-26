@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row: 2/3;
+    column-gap: 30px;
     align-items: center;
     justify-items: start;
     font-size: 15px;
@@ -20,7 +21,7 @@
 
 .site-navigation__item {
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     padding: 15px 0;
   }
 
@@ -46,7 +47,7 @@
     opacity: 0.3;
   }
 
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     padding: 10px 0;
   }
 }
