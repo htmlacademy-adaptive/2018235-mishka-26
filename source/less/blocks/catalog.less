@@ -1,10 +1,11 @@
-.catalog__heading {
-  padding: 20px 0;
-  background-color: var(--accent-background-color);
-}
-
 .catalog__list {
   margin: 0;
   padding: 30px 0;
   .list-reset();
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 51px;
+  }
 }

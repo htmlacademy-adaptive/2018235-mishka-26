@@ -1,5 +1,8 @@
 .input-item__field {
+  background-color: transparent;
+
   &--text {
+    width: 100%;
     padding: 17px 9px 17px 0;
     font: inherit;
     font-size: 17px;
@@ -7,6 +10,10 @@
     color: inherit;
     border: none;
     border-bottom: 2px solid var(--main-color);
+
+    @media (min-width: @tablet-width) {
+      font-size: 19px;
+    }
   }
 
   ::placeholder {
@@ -14,9 +21,14 @@
     font-size: 17px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
+
+    @media (min-width: @tablet-width) {
+      font-size: 19px;
+    }
   }
 
   &--textarea {
+    width: 100%;
     padding: 17px;
     font: inherit;
     font-size: 17px;
@@ -24,6 +36,7 @@
     color: var(--main-color);
     resize: none;
     border: 2px solid var(--basic-color-dark);
+    box-sizing: border-box;
   }
 }
 
@@ -31,4 +44,8 @@
   font-weight: 700;
   line-height: 18px;
   color: var(--main-color);
+
+  @media (min-width: @tablet-width) {
+    font-size: 19px;
+  }
 }
