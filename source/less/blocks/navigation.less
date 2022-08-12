@@ -17,6 +17,7 @@
     grid-template-columns: 317px 351px;
     justify-items: start;
     margin: 0;
+    z-index: 1;
     background-color: transparent;
   }
 
@@ -123,19 +124,23 @@
     position: absolute;
     top: 79px;
     left: 0;
+    z-index: 2;
   }
 
   .navigation--opened .user-navigation {
     position: absolute;
-    top: 237px;
+    top: 235px;
     left: 0;
+    z-index: 2;
   }
 
   .navigation--nojs .site-navigation {
     display: block;
+    z-index: 2;
   }
 
   .navigation--nojs .user-navigation {
     display: block;
+    z-index: 2;
   }
 }

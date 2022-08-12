@@ -1,5 +1,32 @@
-.intro__hero {
+.intro {
   background: #f9f9f9 url("../img/index/hero-bg.jpg") no-repeat center/contain;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      bottom: -13px;
+      left: 0;
+      background-image: url("../../img/zigzag-line-white-tablet.svg");
+      background-repeat: repeat-x;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      height: 34px;
+      bottom: -18px;
+      left: 0;
+      background-image: url("../../img/zigzag-line-white-desktop.svg");
+    }
+  }
+}
+
+
+.intro__hero {
   padding: 53px 0 100px;
 
   @media (min-width: @tablet-width) {

@@ -20,8 +20,9 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     margin: 0;
-    bottom: 23px;
-    right: 70px;
+    column-gap: 37px;
+    bottom: 2px;
+    right: 19px;
   }
 }
 
@@ -34,7 +35,11 @@
   box-sizing: border-box;
   border: 1px solid #ececec;
 
-
+  @media (min-width: @tablet-width) {
+    width: 50px;
+    background-position: center;
+    border: none;
+  }
 }
 
 .slider__button-previous {

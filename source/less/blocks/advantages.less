@@ -3,7 +3,7 @@
   display: grid;
 
   @media (min-width: @tablet-width) {
-    padding: 48px 0 80px;
+    padding: 56px 0 83px;
   }
 
   @media (min-width: @desktop-width) {
@@ -14,8 +14,12 @@
 .advantages__title {
   margin: 0 0 28px;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 43px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-bottom: 39px;
+    margin-bottom: 42px;
     margin-left: 175px;
   }
 }
@@ -29,14 +33,15 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 70px;
-    row-gap: 58px;
+    column-gap: 2px;
+    row-gap: 55px;
   }
 
   @media (min-width: @desktop-width) {
     width: 670px;
     margin-left: 175px;
     column-gap: 30px;
+    row-gap: 57px;
   }
 }
 
