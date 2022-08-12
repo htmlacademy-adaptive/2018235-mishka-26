@@ -3,11 +3,11 @@
   display: grid;
 
   @media (min-width: @tablet-width) {
-    padding: 60px 0 80px;
+    padding: 48px 0 80px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 68px 0 90px;
+    padding: 69px 0 87px;
   }
 }
 
@@ -24,9 +24,10 @@
   .list-reset();
   margin: 0;
   padding: 0;
+  display: grid;
+  row-gap: 28px;
 
   @media (min-width: @tablet-width) {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 70px;
     row-gap: 58px;
@@ -35,13 +36,13 @@
   @media (min-width: @desktop-width) {
     width: 670px;
     margin-left: 175px;
-    column-gap: 85px;
+    column-gap: 30px;
   }
 }
 
 .advantages__item {
   background-repeat: no-repeat;
-  padding-top: 50px;
+  padding-top: 55px;
 
   &--ecologic {
     background-image: url("../img/index/advantages/ecologic.svg");
@@ -86,6 +87,10 @@
       order: 6;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 54px;
+  }
 }
 
 .advantages__description {
@@ -93,4 +98,9 @@
   font-weight: 700;
   line-height: 20px;
   color: var("--main-color");
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }

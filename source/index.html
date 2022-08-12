@@ -11,7 +11,7 @@
 <body class="page__body">
   <header class="page-header">
     <div class="container">
-      <nav class="navigation navigation--closed navigation--nojs">
+      <nav class="navigation navigation--opened navigation--nojs">
         <a class="navigation__logo logo">
           <img class="logo__image" src="img/header/header-logo.svg" alt="Логотип магазина Мишка." width="86"
             height="35">
@@ -121,7 +121,7 @@
         <h2 class="advantages__title section-title">Коротко о&nbsp;нас:</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--ecologic">
-            <p class="advantages__description">Экологически чистые материалы</p>
+            <p class="advantages__description">Экологически<br> чистые материалы</p>
           </li>
           <li class="advantages__item advantages__item--price">
             <p class="advantages__description">Скандинавский стиль по&nbsp;российской цене</p>
@@ -189,10 +189,10 @@
             </li>
           </ul>
           <div class="slider__buttons">
-            <button class="slider__button-previous" type="button">
+            <button class="slider__button slider__button-previous" type="button">
               <span class="visually-hidden">Предыдущий отзыв.</span>
             </button>
-            <button class="slider__button-next" type="button">
+            <button class="slider__button slider__button-next" type="button">
               <span class="visually-hidden">Следующий отзыв.</span>
             </button>
           </div>
@@ -210,7 +210,7 @@
               <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </dd>
             <dt class="contacts__item">адрес:</dt>
-            <dd class="contacts__value">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</dd>
+            <dd class="contacts__value">г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д. 19/8, офис 101</dd>
           </dl>
           <div class="contacts__location location">
             <img class="contacts__image" src="img/index/map.jpg"
@@ -270,7 +270,7 @@
       <p class="page-footer__copyright copyright">
         Разработано
         <a class="copyright-link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+          <svg class="copyright-icon" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
           </svg>
@@ -308,6 +308,7 @@
       </form>
     </div>
   </div>
+  <script src="js/burger.js"></script>
 </body>
 
 </html>

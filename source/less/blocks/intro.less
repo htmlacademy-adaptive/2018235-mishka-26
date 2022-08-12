@@ -1,6 +1,15 @@
 .intro__hero {
   background: #f9f9f9 url("../img/index/hero-bg.jpg") no-repeat center/contain;
   padding: 53px 0 100px;
+
+  @media (min-width: @tablet-width) {
+    padding: 135px 0 351px;
+    border-top: 1px solid #ececec;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 137px 0 335px;
+  }
 }
 
 .intro__title {
