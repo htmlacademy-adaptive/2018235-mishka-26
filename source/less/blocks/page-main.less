@@ -2,10 +2,18 @@
   flex-grow: 1;
 
   &--catalog {
-    margin: 0 0 58px;
+    margin: 0 0 63px;
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 108px;
+    }
   }
 
   @media (min-width: @tablet-width) {
+    margin-top: -50px;
+  }
+
+  @media (min-width: @desktop-width) {
     margin-top: -42px;
   }
 }
