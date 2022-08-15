@@ -86,6 +86,10 @@
   .link-reset();
   position: relative;
 
+  &:hover {
+    color: #46c1ae;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -99,6 +103,14 @@
       bottom: -9px;
     }
   }
+}
+
+.contacts__email:hover::after {
+  background-color: #46c1ae;
+}
+
+.contacts__email:active::after {
+  background-color: rgba(70, 193, 174, 0.1);
 }
 
 .contacts__location {
