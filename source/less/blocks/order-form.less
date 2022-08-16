@@ -21,7 +21,12 @@
 
   &--textarea {
     margin-bottom: 18px;
+
+    @media (min-width: @desktop-width) {
+      padding-top: 53px;
+    }
   }
+
 
   @media (min-width: @tablet-width) {
     padding: 50px 0;
@@ -41,14 +46,10 @@
     padding-left: 21px;
     grid-template-columns: 100px 700px;
     column-gap: 14px;
-  }
 
-  &--name {
-    padding-top: 52px;
-  }
-
-  &--textarea {
-    padding-top: 53px;
+    &--name {
+      padding-top: 52px;
+    }
   }
 }
 
