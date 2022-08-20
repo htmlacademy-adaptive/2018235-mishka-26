@@ -7,9 +7,18 @@
   font-weight: 700;
   background-color: var(--basic-background-color);
 
+  &--nojs {
+    min-height: 395px;
+
+    @media (min-width: @tablet-width) {
+      min-height: auto;
+    }
+  }
+
   @media (min-width: @tablet-width) {
-    grid-template-columns: 320px 348px;
+    grid-template-columns: 317px 351px;
     justify-items: start;
+    z-index: 1;
     background-color: transparent;
   }
 
@@ -19,24 +28,120 @@
 }
 
 .navigation__logo {
+  padding: 22px 0;
+  align-self: start;
+
   @media (min-width: @desktop-width) {
     grid-column-start: 2;
     justify-self: center;
+    padding: 9px 0;
   }
 }
 
 .navigation__toggle {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 20px;
+  top: 32px;
+  right: 30px;
+  z-index: 2;
+  display: block;
+  width: 21px;
+  height: 20px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
+.navigation--closed .navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #231f20;
+  box-shadow: 0 6px 0 0 #231f20, 0 12px 0 0 #231f20;
+}
+
 .navigation__list {
   margin: 0;
   padding: 0;
+  background-color: var(--basic-background-color);
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
+}
+
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
+
+.navigation--opened .navigation__toggle {
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -4px;
+    width: 29px;
+    height: 2px;
+    background-color: var(--main-color);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation--closed .site-navigation {
+    display: none;
+  }
+
+  .navigation--closed .user-navigation {
+    display: none;
+  }
+
+  .navigation--opened .site-navigation {
+    position: absolute;
+    top: 79px;
+    left: 0;
+    z-index: 2;
+  }
+
+  .navigation--opened .user-navigation {
+    position: absolute;
+    top: 235px;
+    left: 0;
+    z-index: 2;
+  }
+
+  .navigation--nojs .site-navigation {
+    display: block;
+    z-index: 2;
+  }
+
+  .navigation--nojs .user-navigation {
+    display: block;
+    z-index: 2;
+  }
 }

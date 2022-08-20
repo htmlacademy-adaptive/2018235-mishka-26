@@ -4,9 +4,10 @@
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
+  box-sizing: border-box;
 
   &--primary {
-    padding: 16px;
+    padding: 14px 16px;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
@@ -27,18 +28,18 @@
 
     @media (min-width: @tablet-width) {
       font-size: 17px;
-      line-height: 16px;
     }
   }
 
   &--modal {
+    padding: 14px 18px;
     font-weight: 700;
     font-size: 17px;
     line-height: 16px;
     text-transform: uppercase;
     color: var(--basic-background-color);
-    background-color: #63d1bb;
-    border: 2px solid #63d1bb;
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
 
     &:hover {
       color: var(--basic-background-color);
