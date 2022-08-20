@@ -25,14 +25,10 @@
 
 .user-navigation__link {
   .link-reset();
-  position: relative;
-  padding: 28px 20px 26px 30px;
+  width: 100%;
   display: flex;
   align-items: center;
-
-  @media (min-width: @tablet-width) {
-    padding: 10px 0;
-  }
+  justify-content: center;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
@@ -40,6 +36,19 @@
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.user-navigation__link-container {
+  width: 320px;
+  padding: 28px 20px 26px 30px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    padding: 10px 0;
   }
 }
 

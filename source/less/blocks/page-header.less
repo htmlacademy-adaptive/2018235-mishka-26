@@ -8,17 +8,25 @@
   }
 }
 
-.page-header__navigation {
-  margin: 0 -30px;
+.page-header__container {
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    padding: 0 50px;
   }
 }
 
 .page-header__text {
   display: none;
+  width: 500px;
   margin: 0;
+  margin-left: auto;
   font-size: 15px;
   text-align: right;
 
