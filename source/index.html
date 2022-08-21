@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -13,8 +17,12 @@
     <div class="page-header__container">
       <nav class="navigation navigation--closed navigation--nojs">
         <a class="navigation__logo logo">
-          <img class="logo__image" src="img/header/header-logo.svg" alt="Логотип магазина Мишка." width="86"
-            height="35">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/header/header-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header/header-logo-tablet.svg">
+            <img class="logo__image" src="img/header/header-logo-phone.svg" alt="Логотип магазина Мишка." width="86"
+              height="35">
+          </picture>
         </a>
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
@@ -118,8 +126,14 @@
             </dl>
           </div>
           <div class="top-product__photo-wrapper">
-            <img class="top-product__photo" src="img/index/knitted-baskets.jpg" alt="Вязаные корзинки разных размеров."
-              width="260" height="315">
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/index/knitted-baskets-desktop.jpg 1x, img/index/knitted-baskets-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/index/knitted-baskets-tablet.jpg 1x, img/index/knitted-baskets-tablet@2x.jpg 2x">
+              <img class="top-product__photo" src="img/index/knitted-baskets.jpg"
+                srcset="img/index/knitted-baskets@2x.jpg 2x" alt="Вязаные корзинки разных размеров.">
+            </picture>
           </div>
           <div class="top-product__footer">
             <p class="top-product__price">Цена: 990&nbsp;руб.</p>
