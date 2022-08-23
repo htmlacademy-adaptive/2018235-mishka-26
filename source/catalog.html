@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -13,8 +17,12 @@
     <div class="page-header__container">
       <nav class="navigation navigation--closed navigation--nojs">
         <a class="navigation__logo logo" href="index.html">
-          <img class="logo__image" src="img/header/header-logo.svg" alt="Логотип магазина Мишка." width="86"
-            height="35">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/header/header-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header/header-logo-tablet.svg">
+            <img class="logo__image" src="img/header/header-logo-phone.svg" alt="Логотип магазина Мишка." width="86"
+              height="35">
+          </picture>
         </a>
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
@@ -84,8 +92,14 @@
         <ul class="catalog__list">
           <li class="catalog__item product-item">
             <a class="product-item__link product-item__link--photo" href="toy-hare.html">
-              <img class="product-item__photo" src="img/catalog/toy-hare.jpg" alt="Вязаная игрушка заяц." width="260"
-                height="195">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="img/catalog/toy-hare-desktop.jpg 1x, img/catalog/toy-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/toy-hare-tablet.jpg 1x, img/catalog/toy-hare-tablet@2x.jpg 2x">
+                <img class="product-item__photo" src="img/catalog/toy-hare.jpg" srcset="img/catalog/toy-hare@2x.jpg 2x"
+                  alt="Вязаная игрушка заяц.">
+              </picture>
             </a>
             <div class="product-item__info">
               <a class="product-item__link product-item__link--label" href="toy-hare.html">
@@ -108,8 +122,14 @@
           </li>
           <li class="catalog__item product-item">
             <a class="product-item__link product-item__link--photo" href="laundry-basket.html">
-              <img class="product-item__photo" src="img/catalog/laundry-basket.jpg" alt="Вязаная игрушка заяц."
-                width="260" height="195">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="img/catalog/laundry-basket-desktop.jpg 1x, img/catalog/laundry-basket-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/laundry-basket-tablet.jpg 1x, img/catalog/laundry-basket-tablet@2x.jpg 2x">
+                <img class="product-item__photo" src="img/catalog/laundry-basket.jpg"
+                  srcset="img/catalog/laundry-basket@2x.jpg 2x" alt="Вязаная корзинка для белья.">
+              </picture>
             </a>
             <div class="product-item__info">
               <a class="product-item__link product-item__link--label" href="laundry-basket.html">
@@ -132,8 +152,15 @@
           </li>
           <li class="catalog__item product-item">
             <a class="product-item__link product-item__link--photo" href="toys-basket.html">
-              <img class="product-item__photo" src="img/catalog/basket-with-toy-animals.jpg"
-                alt="Вязаная корзинка с вязаными игрушками животными." width="260" height="195">
+              <picture>
+                <source media="(min-width: 1150px)"
+                  srcset="img/catalog/basket-with-toy-animals-desktop.jpg 1x, img/catalog/basket-with-toy-animals-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/basket-with-toy-animals-tablet.jpg 1x, img/catalog/basket-with-toy-animals-tablet@2x.jpg 2x">
+                <img class="product-item__photo" src="img/catalog/basket-with-toy-animals.jpg"
+                  srcset="img/catalog/basket-with-toy-animals@2x.jpg 2x"
+                  alt="Вязаная корзинка с вязаными игрушками животными.">
+              </picture>
             </a>
             <div class="product-item__info">
               <a class="product-item__link product-item__link--label" href="toys-basket.html">
@@ -176,6 +203,9 @@
                 <path d="M38.4 20.5v35.7l29.8-17.8-29.8-17.9Z" fill="#fff" />
               </svg>
             </button>
+            <video class="video-block__player" width="260" poster="img/catalog/video-cover-desktop.jpg">
+              Your browser doesn't support HTML5 video tag
+            </video>
           </div>
           <p class="production__description">По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли для вас подробное
             видео
