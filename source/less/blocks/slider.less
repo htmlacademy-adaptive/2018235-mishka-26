@@ -34,6 +34,15 @@
   background-position: left 38px center;
   box-sizing: border-box;
   border: 1px solid #ececec;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     width: 50px;
@@ -45,14 +54,6 @@
 .slider__button-previous {
   border-right: none;
   background-image: url("../img/index/arrow-left.svg");
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .slider__button-next {

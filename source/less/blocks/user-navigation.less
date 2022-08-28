@@ -29,14 +29,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &:hover {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-  }
 }
 
 .user-navigation__link-container {
@@ -54,6 +46,7 @@
 
 .user-navigation__icon {
   margin-right: 25px;
+  fill: rgba(0, 0, 0, 0.2);
 
   &--search {
     margin-left: 2px;
@@ -71,4 +64,20 @@
       display: none;
     }
   }
+}
+
+.user-navigation__link:hover .user-navigation__icon {
+  fill: var(--accent-color);
+}
+
+.user-navigation__link:active .user-navigation__icon {
+  fill: rgba(99, 209, 187, 0.3);
+}
+
+.user-navigation__link:hover .user-navigation__name {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation__link:active .user-navigation__name {
+  color: rgba(0, 0, 0, 0.3);
 }
