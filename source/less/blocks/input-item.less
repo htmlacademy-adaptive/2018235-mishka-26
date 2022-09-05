@@ -142,6 +142,11 @@
   background-color: var(--accent-color);
 }
 
+.input-item--radio:focus-within .input-item__mark,
+.input-item--checkbox:focus-within .input-item__mark {
+  border-color: var(--accent-color);
+}
+
 
 .input-item__label {
   display: block;
@@ -151,6 +156,11 @@
   @media (min-width: @tablet-width) {
     font-size: 19px;
   }
+}
+
+.input-item--radio:focus-within .input-item__label,
+.input-item--checkbox:focus-within .input-item__label {
+  color: #62d1ba;
 }
 
 .input-item__icon {
