@@ -10,6 +10,8 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -28,7 +30,7 @@
           <span class="visually-hidden">Открыть меню.</span>
         </button>
 
-        <ul class="navigation__list site-navigation">
+        <ul class="navigation__list navigation__list--pages site-navigation">
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="catalog.html">
               <div class="site-navigation__link-container">Каталог товаров</div>
@@ -50,7 +52,7 @@
             </a>
           </li>
         </ul>
-        <ul class="navigation__list user-navigation">
+        <ul class="navigation__list navigation__list--actions user-navigation">
           <li class="user-navigation__item">
             <a class="user-navigation__link" href="">
               <div class="user-navigation__link-container">
@@ -195,8 +197,8 @@
               <div class="order-form__caption order-form__caption--contacts">Tел</div>
               <div class="order-form__item order-form__item--user-phone">
                 <label class="order-form__control input-item input-item--text">
-                  <input class="input-item__field input-item__field--text" type="tel" name="user-phone" required
-                    placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                  <input class="input-item__field input-item__field--text input-item__field--contacts" type="tel"
+                    name="user-phone" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                   <span class="visually-hidden">номер телефона.</span>
                   <svg class="input-item__icon input-item__icon--phone" width="25" height="24">
                     <use href="img/sprite.svg#form-icon-phone"></use>
@@ -205,9 +207,9 @@
               </div>
               <div class="order-form__caption order-form__caption--contacts order-form__caption--mail">E-mail</div>
               <div class="order-form__item">
-                <label class="order-form__control input-item input-item--text">
-                  <input class="input-item__field input-item__field--text" type="email" name="user-email" required
-                    placeholder="Ваш Email*">
+                <label class="order-form__control input-item input-item--text input-item--text">
+                  <input class="input-item__field input-item__field--text input-item__field--contacts" type="email"
+                    name="user-email" required placeholder="Ваш Email*">
                   <span class="visually-hidden">E-mail адрес.</span>
                   <svg class="input-item__icon input-item__icon--mail" width="32" height="21">
                     <use href="img/sprite.svg#form-icon-mail"></use>
